@@ -1,4 +1,4 @@
-This python project is a part of my master's thesis. It performs event-by-event motion correction in Positron Emission Tomography (PET) by tracking center of mass (COM). There is also general utility for extracting information from Siemens PETLink data and running Siemens e7_code from within python. 
+This python project is a part of my master's thesis. It performs event-by-event motion correction in Positron Emission Tomography (PET) by tracking center of mass (COM). There is also general utility for extracting information from Siemens PETLink data and running Siemens e7tools from within python. 
 
 In the python source folder, the petlink module is based on Siemens c++ walkthroughs. The interfile module is on my branch of Stefano Pedemonte's project. Please see https://github.com/spedemon, where Stefano Pedemonte also provides an alternative petlink module. For more PETLink information, please see https://www.siemens-healthineers.com/en-us/molecular-imaging/petlink-documents.
 
