@@ -93,9 +93,3 @@ def get_histogram_bins(events, shape,verbose=False):
     robin = si - (tx_ang * SINOW)
 
     return np.array([tof,sn,tx_ang,robin])
-
-def header_path(data_path):
-    return data_path[:-1] + "hdr"
-
-def sino_path(data_path):
-    return data_path[:-1] + "s"
