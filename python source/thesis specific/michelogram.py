@@ -5,10 +5,8 @@ def get_offset_map(size):
     """ offset map: return [-0,+1,-1, +2, -2,...] of length size. size should be odd
     return omap"""
     omap = np.arange(size)
-    omap[0: :2] *= -1
-    #[-0,1,-2,+3,...]
-    omap = np.cumsum(omap)
-    #[ 0,1,-1,+3...]
+    omap[0: :2] *= -1     #[-0,1,-2,+3,...]
+    omap = np.cumsum(omap)     #[ 0,1,-1,+3...]
     return omap
 
 def get_offset_map_inv(size):
