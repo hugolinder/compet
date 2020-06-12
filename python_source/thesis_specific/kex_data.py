@@ -6,8 +6,6 @@ import numpy as np
 #Hugo code
 #import PythonKEX
 #from PETModel import PETModel
-import pet_images
-import kex_headers
 import filefit as ff
 
 NORM_PATH = r"C:/Users/petct/Desktop/KanylPET-Converted/KanylPET-norm.n.hdr"
