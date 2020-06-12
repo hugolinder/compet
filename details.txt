@@ -1,0 +1,17 @@
+Software development in my thesis project resulted in a number of python modules and jupyter notebooks. Minor contributions to the interfile module by [S Pedemon] were also made, resolving a parsing issue. A brief documentation to the developed software is included below.  
+
+
+The import of the kex modules make the PET scan parameters for the kex dataset accessible in python. The related petlink module is a python implementation of some functionalities in the petlink dataformat documentation and c++ walkthroughs. Petlink can be used to extract LOR TOF bin addresses and event timing information from the 32 bit listmode format. The combination of kex and petlink modules made the kex dataset more accessible
+
+
+The representation module can be used to express listmode data, that is the LOR TOF bins, in units of millimeter, seconds and radians. The module provides arc correction, maps between bins and offset in segments and tof bins, and represents 1D michelogram bins in terms ringmean and ring difference. LOR TOF bins can be represented as image bins. The inverse transformations were also implemented. Representation of LOR TOF space by image transformation is also available.
+
+The listmode module can be used to identify listmode bins in FOV. Furthermore, it facilitates the transition between histogram and listmode formats. The module also keeps track of timing information when the list length changes as non-events, randoms, and events outside FOV are removed. Calculations of normalized and random corrected weight per listmode event are included. Coordination of the listmode processing pipeline is found there in.
+
+The position module calculates COM in histogram and listmode representations. Event weighted listmode COM is implemented.
+
+The e7tools module can be used to execute e7tools software using python. The notebooks demonstrate how this module can be used to reconstruct the kex dataset and get a normalisation sinogram with python automation. 
+
+The visual module contains functionalities for plotting data with multiple dimensions, such as the LOR TOF histograms and COM position signals. 
+
+The jupyter notebooks for the project demonstrate listmode reconstruction, COM signal, listmode gating and motion correction.
